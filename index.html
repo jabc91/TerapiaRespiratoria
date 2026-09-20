@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es-CR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f4b">
+  <meta
+    name="description"
+    content="José Adrián Quirós Cambronero, licenciado en Terapia Respiratoria. Cuéntame tu consulta y escríbeme directamente por WhatsApp."
+  >
+
+  <title>José Adrián Quirós Cambronero | Terapia Respiratoria</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+  <header class="site-header">
+    <div class="shell header-layout">
+      <a
+        class="identity"
+        href="#inicio"
+        aria-label="José Adrián Quirós, volver al inicio"
+      >
+        <span class="identity-symbol" aria-hidden="true">JA</span>
+
+        <span class="identity-text">
+          <strong>José Adrián Quirós</strong>
+          <span>Lic. en Terapia Respiratoria</span>
+        </span>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegación principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#consulta">Consulta</a>
+      </nav>
+
+      <a class="header-action" href="#consulta">
+        Escríbeme <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="shell hero-layout">
+        <div class="hero-content">
+          <p class="overline">
+            <span class="overline-rule" aria-hidden="true"></span>
+            TERAPIA RESPIRATORIA · COSTA RICA
+          </p>
+
+          <h1 id="hero-title">
+            Tu consulta merece <em>tiempo y atención.</em>
+          </h1>
+
+          <p class="hero-lead">
+            Soy José Adrián Quirós Cambronero. Si tienes una inquietud
+            sobre tu salud respiratoria, cuéntame qué sucede y conversemos
+            por WhatsApp.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button button-solid" href="#consulta">
+              Cuéntame tu consulta <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button-text" href="#perfil">
+              Conoce mi perfil <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <p class="hero-footnote">
+            Tu mensaje llegará directamente a mi número de WhatsApp.
+          </p>
+        </div>
+
+        <figure class="hero-media">
+          <figure class="hero-media">
+  <img
+    src="1.png"
+    alt="Profesional de terapia respiratoria atendiendo a una niña"
+    width="1122"
+    height="1402"
+  >
+
+  <figcaption>
+    
+    <span></span>
+  </figcaption>
+</figure>
+
+          <figcaption>
+            Atención respiratoria
+            <span>¡Tu Mejor Opción!</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="profile" id="perfil" aria-labelledby="profile-title">
+      <div class="shell profile-layout">
+        <div class="profile-heading">
+          <p class="overline">01 / PERFIL PROFESIONAL</p>
+
+          <h2 id="profile-title">
+            Una conversación puede ser el primer paso.
+          </h2>
+        </div>
+
+        <div class="profile-body">
+          <p>
+            Mi nombre es <strong>José Adrián Quirós Cambronero</strong>
+            y soy licenciado en Terapia Respiratoria.
+            Puedes escribirme para explicarme tu consulta y conocer más
+            sobre la atención que necesitas.
+          </p>
+
+          <a class="profile-link" href="#consulta">
+            Hacer una consulta <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="consulta" aria-labelledby="contact-title">
+      <div class="shell contact-layout">
+        <div class="contact-intro">
+          <p class="overline">02 / CONTACTO DIRECTO</p>
+
+          <h2 id="contact-title">
+            Hablemos de lo que necesitas.
+          </h2>
+
+          <p>
+            Completa el formulario. Al continuar, se abrirá WhatsApp
+            con tu mensaje preparado para que lo revises y lo envíes.
+          </p>
+
+          <div class="contact-number">
+            <span>WHATSAPP DIRECTO</span>
+
+            <a
+              href="https://wa.me/50663874009"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              +506 6387 4009 <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div class="form-intro">
+            <p class="form-kicker">ENVÍA TU CONSULTA</p>
+            <h3>¿En qué puedo ayudarte?</h3>
+            <p>Los campos marcados con * son obligatorios.</p>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-line">
+              <div class="field">
+                <label for="full-name">
+                  Nombre completo <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="full-name"
+                  name="nombre"
+                  type="text"
+                  autocomplete="name"
+                  maxlength="100"
+                  minlength="2"
+                  required
+                  placeholder="Tu nombre y apellido"
+                >
+
+                <span class="error" id="full-name-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="phone">
+                  Teléfono <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="phone"
+                  name="telefono"
+                  type="tel"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  maxlength="25"
+                  required
+                  placeholder="Ej.: 8888 8888"
+                >
+
+                <span class="error" id="phone-error"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="reason">
+                Motivo de la consulta <span aria-hidden="true">*</span>
+              </label>
+
+              <select id="reason" name="motivo" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option>Consulta general</option>
+                <option>Información sobre atención</option>
+                <option>Seguimiento</option>
+                <option>Otro motivo</option>
+              </select>
+
+              <span class="error" id="reason-error"></span>
+            </div>
+
+            <div class="field">
+              <label for="details">
+                Cuéntame tu consulta <span aria-hidden="true">*</span>
+              </label>
+
+              <textarea
+                id="details"
+                name="consulta"
+                rows="5"
+                minlength="10"
+                maxlength="1000"
+                required
+                placeholder="Escribe aquí lo que te gustaría consultar..."
+              ></textarea>
+
+              <span class="error" id="details-error"></span>
+            </div>
+
+            <button class="button button-solid submit-button" type="submit">
+              Continuar a WhatsApp <span aria-hidden="true">↗</span>
+            </button>
+
+            <p class="form-note" id="form-note" role="status" aria-live="polite">
+              Antes de compartir tus datos podrás revisar el mensaje en
+              WhatsApp. El envío se completa al pulsar «Enviar» allí.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-layout">
+      <span>
+        <strong>José Adrián Quirós Cambronero</strong>
+        <small>Licenciado en Terapia Respiratoria</small>
+      </span>
+
+      <a
+        href="https://wa.me/50663874009"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp ↗
+      </a>
+
+      <small>
+        © <span id="year"></span> José Adrián Quirós Cambronero
+      </small>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      document.getElementById('year').textContent =
+        new Date().getFullYear();
+
+      const form = document.getElementById('contact-form');
+
+      const fields = ['full-name', 'phone', 'reason', 'details']
+        .map(id => document.getElementById(id));
+
+      const errors = {
+        'full-name': 'Escribe tu nombre completo.',
+        phone: 'Escribe un número de teléfono válido.',
+        reason: 'Selecciona el motivo de tu consulta.',
+        details: 'Describe tu consulta con al menos 10 caracteres.'
+      };
+
+      function check(field) {
+        const value = field.value.trim();
+
+        const invalid = field.id === 'phone'
+          ? value.replace(/\D/g, '').length < 8
+          : !value || !field.checkValidity();
+
+        document.getElementById(field.id + '-error').textContent =
+          invalid ? errors[field.id] : '';
+
+        field.setAttribute('aria-invalid', String(invalid));
+
+        return !invalid;
+      }
+
+      fields.forEach(field => {
+        field.addEventListener('input', () => {
+          if (field.getAttribute('aria-invalid') === 'true') {
+            check(field);
+          }
+        });
+
+        field.addEventListener('change', () => {
+          if (field.getAttribute('aria-invalid') === 'true') {
+            check(field);
+          }
+        });
+      });
+
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+
+        const results = fields.map(check);
+
+        if (results.includes(false)) {
+          fields[results.indexOf(false)].focus();
+          return;
+        }
+
+        const value = id =>
+          document.getElementById(id).value.trim();
+
+        const message =
+          `Hola, José Adrián. Quisiera hacer una consulta.\n\n` +
+          `Nombre: ${value('full-name')}\n` +
+          `Teléfono: ${value('phone')}\n` +
+          `Motivo: ${value('reason')}\n` +
+          `Consulta: ${value('details')}`;
+
+        document.getElementById('form-note').textContent =
+          'Abriendo WhatsApp. Revisa el mensaje y pulsa «Enviar» para compartirlo.';
+
+        window.location.href =
+          'https://wa.me/50663874009?text=' +
+          encodeURIComponent(message);
+      });
+    })();
+  </script>
+</body>
+</html>
