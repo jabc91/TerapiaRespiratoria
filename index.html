@@ -19,6 +19,22 @@
   >
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .site-header .identity-logo {
+      display: block;
+      width: 110px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 600px) {
+      .site-header .identity-logo {
+        width: 80px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -31,12 +47,13 @@
         href="#inicio"
         aria-label="Jose Adrián Quirós Cambronero, volver al inicio"
       >
-        <span class="identity-symbol" aria-hidden="true">JA</span>
-
-        <span class="identity-text">
-          <strong>Jose Adrián Quirós Cambronero</strong>
-          <span>Lic. Terapia Respiratoria</span>
-        </span>
+        <img
+          class="identity-logo"
+          src="1111.jpeg"
+          alt="Jose Adrián Quirós — Terapia Respiratoria"
+          width="1024"
+          height="1024"
+        >
       </a>
 
       <nav class="header-nav" aria-label="Navegación principal">
@@ -85,19 +102,12 @@
         </div>
 
         <figure class="hero-media">
-          <figure class="hero-media">
-  <img
-    src="01.png"
-    alt="Profesional de terapia respiratoria atendiendo a una niña"
-    width="1122"
-    height="1402"
-  >
-
-  <figcaption>
-    
-    <span></span>
-  </figcaption>
-</figure>
+          <img
+            src="01.png"
+            alt="Profesional de terapia respiratoria atendiendo a una niña"
+            width="1122"
+            height="1402"
+          >
 
           <figcaption>
             Atención respiratoria
@@ -119,7 +129,7 @@
 
         <div class="profile-body">
           <p>
-            Soy <strong>Jose Adrián Quirós Cambronero</strong>
+            Soy <strong>Jose Adrián Quirós Cambronero</strong>,
             licenciado en Terapia Respiratoria.
             Puedes escribirme para explicarme tu consulta y conocer más
             sobre la atención que necesitas.
@@ -182,6 +192,7 @@
                   minlength="2"
                   required
                   placeholder="Tu nombre y apellido"
+                  aria-describedby="full-name-error"
                 >
 
                 <span class="error" id="full-name-error"></span>
@@ -201,6 +212,7 @@
                   maxlength="25"
                   required
                   placeholder="Ej.: 8888 8888"
+                  aria-describedby="phone-error"
                 >
 
                 <span class="error" id="phone-error"></span>
@@ -212,7 +224,12 @@
                 Motivo de la consulta <span aria-hidden="true">*</span>
               </label>
 
-              <select id="reason" name="motivo" required>
+              <select
+                id="reason"
+                name="motivo"
+                required
+                aria-describedby="reason-error"
+              >
                 <option value="" selected disabled>Selecciona una opción</option>
                 <option>Consulta general</option>
                 <option>Información sobre atención</option>
@@ -236,6 +253,7 @@
                 maxlength="1000"
                 required
                 placeholder="Escribe aquí lo que te gustaría consultar..."
+                aria-describedby="details-error"
               ></textarea>
 
               <span class="error" id="details-error"></span>
